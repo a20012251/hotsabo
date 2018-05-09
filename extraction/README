@@ -1,1 +1,5 @@
 crawling + text extraction
+
+El siguiente comando deberia extraer todas las noticias del dia del comercio y contruir un archivo "articlesData.json" con la data de las noticias.
+
+>hotsabo/extraction/elComercio$ scrapy crawl test

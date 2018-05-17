@@ -36,7 +36,7 @@ for item in articlesData:
 ###Utilizar las siguientes dos lineas para mostrar los grupos
 ### de noticias de cada publicacion:
 for pub in articlesData:
-    print(pub["_values"]["noticias"])
+    print(pub["_values"]["similares"])
 
 ###Crear archivo JSON:
 with open('newArticlesData.json', 'w') as outfile:

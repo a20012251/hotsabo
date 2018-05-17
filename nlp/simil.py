@@ -28,7 +28,6 @@ mainSims = gensim.similarities.Similarity('/home/nosabo/Documents/Coding/Python/
 for item in articlesData:
     query = mainTf_idf[mainDict.doc2bow(item["_values"]["tokens"])]
     item["_values"]["similares"] = []
-    item["_values"]["isNews"] = 0
     for index, percent in enumerate(mainSims[query]):
         if (percent > 0.4):
             item["_values"]["similares"].append(index)
